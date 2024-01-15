@@ -1,0 +1,14 @@
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 100%;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .header-sec {
+        padding: 32px;
+    }
+    .header-sec .search-container {
+        grid-template-columns: 1fr;
+    }
+}
