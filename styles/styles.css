@@ -15,15 +15,22 @@ body {
     margin: 0 auto;
 }
 
-.textPara {
-    /*  */
+.section {
+    margin-bottom: 100px;
 }
+
+.textPara {
+    color: rgba(19, 19, 24, 0.70);
+
+}
+
 .btn-primary {
     background-color: #FF5400;
     border-radius: 8px;
     padding: 16px 32px;
     border: none;
     color: #FFF;
+    font-weight: 800;
 }
 
 
@@ -107,6 +114,38 @@ body {
     padding: 16px;
     border: none;
 }
-.header-sec .search-container button>i {
-    margin-right: 14px;
+
+.header-sec .search-container button {
+    font-weight: 400;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* header section ends */
+
+.section-container {
+    display: flex;
+    gap: 50px;
+}
+.section-container>div {
+    width: calc((100% - 50px)/2);
+}
+
+.section-container .section-content>* {
+    margin-bottom: 24px;
+}
+
+.section-container .section-content h2 {
+    color: #131318;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.section-container .section-content ul {
+    margin-left: 20px;
+}
+.section-container .section-img img {
+    width: 100%;
+    object-fit: cover;
 }

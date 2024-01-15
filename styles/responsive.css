@@ -1,9 +1,27 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 992px) {
     .container {
-        max-width: 100%;
+        width: 90%;
     }
-    .navbar {
+    .section-container {
         flex-direction: column;
+    }
+    .header-sec {
+        padding: 32px;
+    }
+    .header-sec .search-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .container, 
+    .section-container>div {
+        width: 100%;
+    }
+    .navbar,
+    .section-container {
+        flex-direction: column;
+        justify-content: center;
     }
     .header-sec {
         padding: 32px;
