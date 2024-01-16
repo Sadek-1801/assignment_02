@@ -26,13 +26,17 @@
         width: 90%;
     }
 
-    .section-container>div {
+    .section-container>div,
+    #reason-section .section-card>div,
+    #newsletter .section-container .newsletter-content,
+    #newsletter .section-container .section-img {
         width: 100%;
-    }
+    } 
 
     .navbar,
     .section-container,
-    #reason-section .section-card {
+    #reason-section .section-card,
+    #newsletter .section-container {
         flex-direction: column;
         align-items: center;
     }
@@ -86,7 +90,9 @@
         grid-column: 1/span 1;
         grid-row: 7/span 1;
     }
-    #reason-section .section-card>div{
-        width: 100%;
+    #newsletter .section-container .newsletter-content {
+        padding: 20px;
     }
+    
+    
 }

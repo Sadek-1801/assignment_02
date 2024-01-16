@@ -24,9 +24,14 @@ body {
     font-weight: 800;
 }
 
+.sub-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
 .textPara {
     color: rgba(19, 19, 24, 0.70);
-
 }
 
 .btn-primary {
@@ -36,6 +41,8 @@ body {
     border: none;
     color: #FFF;
     font-weight: 800;
+    font-size: 20px;
+    font-style: normal;
 }
 
 
@@ -217,6 +224,8 @@ body {
 }
 
 /* destination section starts */
+
+
 /* reason section starts */
 
 #reason-section .section-card {
@@ -232,6 +241,7 @@ body {
     padding: 32px;
     border-radius: 16px;
 }
+
 #reason-section .section-card .card1,
 #reason-section>.section-card>.card3 {
     border: 1px solid rgba(251, 181, 99, 0.20);
@@ -242,9 +252,64 @@ body {
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
 }
-#reason-section .section-card .card-title {
-    color: #131318;
-    font-size: 1.5rem;
-    font-weight: 800;
+
+#reason-section .section-card h3 {
     margin: 24px 0 16px 0;
+}
+
+/* newsletter section styles */
+#newsletter .section-container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+#newsletter .section-container .newsletter-content {
+    padding: 40px;
+    width: calc(40% - 24px);
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+#newsletter .section-container .newsletter-content p {
+    margin-top: 16px;
+}
+
+#newsletter .section-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-around;
+    margin: 24px 0px;
+}
+
+#newsletter .section-container form input {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+#newsletter .section-img {
+    width: calc(60% - 24px);
+    height: 100%;
+    position: relative;
+}
+#newsletter .section-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#offer-button {
+    position: absolute;
+    bottom: 50px;
+    right: 24px;
+    width: 30%;
+    text-align: center;
+    transform: rotate(-19deg);
+}
+#offer-button p {
+    font-weight: 400;
+}
+#offer-button h2 {
+    font-size: 2rem;
 }
