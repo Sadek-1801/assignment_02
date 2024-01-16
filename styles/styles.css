@@ -17,6 +17,7 @@ body {
 .section {
     margin-bottom: 100px;
 }
+
 .section-title {
     color: #131318;
     font-size: 3rem;
@@ -132,9 +133,11 @@ body {
     display: flex;
     gap: 50px;
 }
+
 .section-container>div {
     width: calc((100% - 50px)/2);
 }
+
 .section-container .section-content {
     display: flex;
     flex-direction: column;
@@ -153,13 +156,16 @@ body {
     width: 100%;
     object-fit: cover;
 }
+
 /* tours section ends */
 
 
 /* destination section starts */
-.destination-section-content {
+.destination-section-content,
+#reason-section .section-content {
     text-align: center;
 }
+
 .destination-section-image {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -167,37 +173,78 @@ body {
     gap: 24px;
     margin-top: 48px;
 }
+
 .destination-section-image .dest-images-1 {
     grid-column: 1/span 6;
     grid-row: 1/span 1;
 }
+
 .destination-section-image .dest-images-2 {
     grid-column: 7/span 6;
     grid-row: 1/span 1;
 }
+
 .destination-section-image .dest-images-3 {
     grid-column: 1/span 4;
     grid-row: 2/span 1;
 }
+
 .destination-section-image .dest-images-4 {
     grid-column: 5/span 5;
     grid-row: 2/span 1;
 }
+
 .destination-section-image .dest-images-5 {
     grid-column: 10/span 3;
     grid-row: 2/span 1;
 }
+
 .destination-section-image .dest-images-6 {
     grid-column: 1/span 6;
     grid-row: 3/span 1;
 }
+
 .destination-section-image .dest-images-7 {
     grid-column: 7/span 6;
     grid-row: 3/span 1;
 }
+
 .destination-section-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
+}
+
+/* destination section starts */
+/* reason section starts */
+
+#reason-section .section-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+#reason-section .section-card>div {
+    width: 40%;
+    padding: 32px;
+    border-radius: 16px;
+}
+#reason-section .section-card .card1,
+#reason-section>.section-card>.card3 {
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+#reason-section .section-card .card2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+#reason-section .section-card .card-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 24px 0 16px 0;
 }
