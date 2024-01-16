@@ -22,6 +22,7 @@ body {
     color: #131318;
     font-size: 3rem;
     font-weight: 800;
+    margin-bottom: 16px;
 }
 
 .sub-title {
@@ -45,22 +46,16 @@ body {
     font-style: normal;
 }
 
-
+/* nav bar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .navbar .left {
     display: flex;
-    align-items: center;
     gap: 16px;
     margin: 50px 0px;
-}
-
-.navbar .left img {
-    /*  */
 }
 
 .navbar .left .nav-title {
@@ -69,8 +64,7 @@ body {
     font-weight: 800;
 }
 
-.navbar .left .nav-special,
-.navbar .right .nav-special {
+.special {
     color: #FF5400;
 }
 
@@ -125,6 +119,8 @@ body {
     background: #FFF;
     padding: 16px;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .header-sec .search-container button {
@@ -184,36 +180,43 @@ body {
 .destination-section-image .dest-images-1 {
     grid-column: 1/span 6;
     grid-row: 1/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-2 {
     grid-column: 7/span 6;
     grid-row: 1/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-3 {
     grid-column: 1/span 4;
     grid-row: 2/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-4 {
     grid-column: 5/span 5;
     grid-row: 2/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-5 {
     grid-column: 10/span 3;
     grid-row: 2/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-6 {
-    grid-column: 1/span 6;
+    grid-column: 1/span 5;
     grid-row: 3/span 1;
+    position: relative;
 }
 
 .destination-section-image .dest-images-7 {
-    grid-column: 7/span 6;
+    grid-column: 6/span 7;
     grid-row: 3/span 1;
+    position: relative;
 }
 
 .destination-section-image img {
@@ -221,6 +224,21 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 16px;
+}
+
+.countryName {
+    color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 /* destination section starts */
@@ -243,7 +261,7 @@ body {
 }
 
 #reason-section .section-card .card1,
-#reason-section>.section-card>.card3 {
+#reason-section .section-card .card3 {
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
 }
@@ -257,30 +275,57 @@ body {
     margin: 24px 0 16px 0;
 }
 
+/* bonus section */
+.facts-contnt-container {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.facts-card-container {
+    display: flex;
+    gap: 10px;
+}
+
+.facts-card {
+    width: 24%;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: bisque;
+    transition: all 0.5s ease-in-out;
+}
+
+.facts-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
 /* newsletter section styles */
 #newsletter .section-container {
     display: flex;
     gap: 24px;
     align-items: center;
+    height: 100%;
 }
 
 #newsletter .section-container .newsletter-content {
     padding: 40px;
-    width: calc(40% - 24px);
+    width: calc(40% - 12px);
     border-radius: 16px;
     border: 1px solid #FF5400;
 }
 
 #newsletter .section-container .newsletter-content p {
-    margin-top: 16px;
+    margin: 16px 0px;
 }
 
 #newsletter .section-container form {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    justify-content: space-around;
-    margin: 24px 0px;
+    justify-content: space-between;
+    margin-top: 24px;
 }
 
 #newsletter .section-container form input {
@@ -288,17 +333,22 @@ body {
     border: none;
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
+    outline: none;
+    cursor: pointer;
 }
+
 #newsletter .section-img {
-    width: calc(60% - 24px);
+    width: calc(60% - 12px);
     height: 100%;
     position: relative;
 }
+
 #newsletter .section-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
 #offer-button {
     position: absolute;
     bottom: 50px;
@@ -307,9 +357,51 @@ body {
     text-align: center;
     transform: rotate(-19deg);
 }
+
 #offer-button p {
     font-weight: 400;
 }
+
 #offer-button h2 {
     font-size: 2rem;
+}
+
+/* footer section styles */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.footer-section {
+    padding: 110px 24px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-title h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.footer-logo-container {
+    display: flex;
+    gap: 24px;
+    font-size: 2rem;
+}
+
+hr {
+    width: 100%;
+    border: 2px solid rgba(19, 19, 24, 0.10);
+    margin: 50px 0px;
 }
