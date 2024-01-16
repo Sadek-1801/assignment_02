@@ -50,12 +50,12 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0px;
 }
 
 .navbar .left {
     display: flex;
     gap: 16px;
-    margin: 50px 0px;
 }
 
 .navbar .left .nav-title {
@@ -64,7 +64,8 @@ body {
     font-weight: 800;
 }
 
-.special {
+.special,
+.navbar .right .special {
     color: #FF5400;
 }
 
