@@ -36,7 +36,6 @@
   }
 
   .navbar,
-  .navbar .right,
   .section-container,
   #reason-section .section-card,
   #newsletter .section-container {
@@ -45,8 +44,7 @@
   }
 
   .navbar .right {
-    gap: 16px;
-    margin-bottom: 20px;
+    display: none;
   }
 
   .header-sec {
